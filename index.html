@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLICK DELIVERY</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-flex">
+    <div class="logo">CLICK DELIVERY</div>
+    <ul class="nav-links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#order">الطلبات</a></li>
+      <li><a href="admin.html">لوحة الإدارة</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">توصيل سريع وآمن داخل أكادير</span>
+      <h1>CLICK DELIVERY</h1>
+      <p>
+        خدمة توصيل احترافية للمطاعم، الصيدليات، المتاجر والأسواق.
+      </p>
+      <a class="btn" href="#order">اطلب الآن</a>
+    </div>
+    <div class="hero-card">
+      <h3>⚡ توصيل في أقل وقت</h3>
+      <p>دعم 24/7 - أسعار مناسبة - خدمة موثوقة</p>
+    </div>
+  </div>
+</header>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2 class="section-title">خدماتنا</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🍔 توصيل المطاعم</h3>
+        <p>نوصل جميع الطلبات بسرعة وأمان.</p>
+      </div>
+
+      <div class="card">
+        <h3>💊 توصيل الأدوية</h3>
+        <p>خدمة خاصة للصيدليات والمستلزمات الطبية.</p>
+      </div>
+
+      <div class="card">
+        <h3>🛒 قضاء الأغراض</h3>
+        <p>كارفور، مرجان، والمحلات التجارية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="section dark">
+  <div class="container">
+    <h2 class="section-title">إنشاء طلب</h2>
+
+    <form id="orderForm" class="order-form">
+      <input type="text" id="name" placeholder="الاسم الكامل" required>
+      <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+      <input type="text" id="address" placeholder="العنوان" required>
+
+      <select id="service">
+        <option>توصيل مطاعم</option>
+        <option>توصيل أدوية</option>
+        <option>قضاء أغراض</option>
+      </select>
+
+      <textarea id="details" placeholder="تفاصيل الطلب"></textarea>
+
+      <button type="submit" class="btn">تأكيد الطلب</button>
+    </form>
+
+    <div id="successMessage" class="success hidden">
+      ✅ تم إرسال الطلب بنجاح
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer">
+    <p>© 2026 CLICK DELIVERY - جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
